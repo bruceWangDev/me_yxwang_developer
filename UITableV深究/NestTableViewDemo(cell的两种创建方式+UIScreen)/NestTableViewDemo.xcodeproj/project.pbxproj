@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		703D4FF421D0787F007A9058 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703D4FF221D0787F007A9058 /* ContactCell.m */; };
+		703D4FF521D0787F007A9058 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703D4FF321D0787F007A9058 /* ContactCell.xib */; };
+		7059377021CC8C6A00305B5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059376F21CC8C6A00305B5A /* AppDelegate.m */; };
+		7059377321CC8C6A00305B5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059377221CC8C6A00305B5A /* ViewController.m */; };
+		7059377621CC8C6A00305B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7059377421CC8C6A00305B5A /* Main.storyboard */; };
+		7059377821CC8C6B00305B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7059377721CC8C6B00305B5A /* Assets.xcassets */; };
+		7059377B21CC8C6B00305B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7059377921CC8C6B00305B5A /* LaunchScreen.storyboard */; };
+		7059377E21CC8C6B00305B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059377D21CC8C6B00305B5A /* main.m */; };
+		7059378821CC8C6B00305B5A /* NestTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059378721CC8C6B00305B5A /* NestTableViewDemoTests.m */; };
+		7059379321CC8C6B00305B5A /* NestTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059379221CC8C6B00305B5A /* NestTableViewDemoUITests.m */; };
+		705937A321CCB8C100305B5A /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 705937A221CCB8C100305B5A /* Contact.m */; };
+		705937A621CCBB8000305B5A /* ContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 705937A521CCBB8000305B5A /* ContactGroup.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7059378421CC8C6B00305B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7059376321CC8C6A00305B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7059376A21CC8C6A00305B5A;
+			remoteInfo = NestTableViewDemo;
+		};
+		7059378F21CC8C6B00305B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7059376321CC8C6A00305B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7059376A21CC8C6A00305B5A;
+			remoteInfo = NestTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		703D4FF121D0787F007A9058 /* ContactCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		703D4FF221D0787F007A9058 /* ContactCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		703D4FF321D0787F007A9058 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		7059376B21CC8C6A00305B5A /* NestTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7059376E21CC8C6A00305B5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7059376F21CC8C6A00305B5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7059377121CC8C6A00305B5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7059377221CC8C6A00305B5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7059377521CC8C6A00305B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7059377721CC8C6B00305B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7059377A21CC8C6B00305B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7059377C21CC8C6B00305B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7059377D21CC8C6B00305B5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7059378321CC8C6B00305B5A /* NestTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7059378721CC8C6B00305B5A /* NestTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestTableViewDemoTests.m; sourceTree = "<group>"; };
+		7059378921CC8C6B00305B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7059378E21CC8C6B00305B5A /* NestTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7059379221CC8C6B00305B5A /* NestTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestTableViewDemoUITests.m; sourceTree = "<group>"; };
+		7059379421CC8C6B00305B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705937A121CCB8C100305B5A /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		705937A221CCB8C100305B5A /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		705937A421CCBB8000305B5A /* ContactGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactGroup.h; sourceTree = "<group>"; };
+		705937A521CCBB8000305B5A /* ContactGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactGroup.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7059376821CC8C6A00305B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059378021CC8C6B00305B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059378B21CC8C6B00305B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		703D4FF021D0786C007A9058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				703D4FF121D0787F007A9058 /* ContactCell.h */,
+				703D4FF221D0787F007A9058 /* ContactCell.m */,
+				703D4FF321D0787F007A9058 /* ContactCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7059376221CC8C6A00305B5A = {
+			isa = PBXGroup;
+			children = (
+				7059376D21CC8C6A00305B5A /* NestTableViewDemo */,
+				7059378621CC8C6B00305B5A /* NestTableViewDemoTests */,
+				7059379121CC8C6B00305B5A /* NestTableViewDemoUITests */,
+				7059376C21CC8C6A00305B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7059376C21CC8C6A00305B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7059376B21CC8C6A00305B5A /* NestTableViewDemo.app */,
+				7059378321CC8C6B00305B5A /* NestTableViewDemoTests.xctest */,
+				7059378E21CC8C6B00305B5A /* NestTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7059376D21CC8C6A00305B5A /* NestTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				703D4FF021D0786C007A9058 /* View */,
+				705937A021CCB8A500305B5A /* Model */,
+				7059376E21CC8C6A00305B5A /* AppDelegate.h */,
+				7059376F21CC8C6A00305B5A /* AppDelegate.m */,
+				7059377121CC8C6A00305B5A /* ViewController.h */,
+				7059377221CC8C6A00305B5A /* ViewController.m */,
+				7059377421CC8C6A00305B5A /* Main.storyboard */,
+				7059377721CC8C6B00305B5A /* Assets.xcassets */,
+				7059377921CC8C6B00305B5A /* LaunchScreen.storyboard */,
+				7059377C21CC8C6B00305B5A /* Info.plist */,
+				7059377D21CC8C6B00305B5A /* main.m */,
+			);
+			path = NestTableViewDemo;
+			sourceTree = "<group>";
+		};
+		7059378621CC8C6B00305B5A /* NestTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7059378721CC8C6B00305B5A /* NestTableViewDemoTests.m */,
+				7059378921CC8C6B00305B5A /* Info.plist */,
+			);
+			path = NestTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		7059379121CC8C6B00305B5A /* NestTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7059379221CC8C6B00305B5A /* NestTableViewDemoUITests.m */,
+				7059379421CC8C6B00305B5A /* Info.plist */,
+			);
+			path = NestTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		705937A021CCB8A500305B5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				705937A121CCB8C100305B5A /* Contact.h */,
+				705937A221CCB8C100305B5A /* Contact.m */,
+				705937A421CCBB8000305B5A /* ContactGroup.h */,
+				705937A521CCBB8000305B5A /* ContactGroup.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7059376A21CC8C6A00305B5A /* NestTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7059379721CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemo" */;
+			buildPhases = (
+				7059376721CC8C6A00305B5A /* Sources */,
+				7059376821CC8C6A00305B5A /* Frameworks */,
+				7059376921CC8C6A00305B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestTableViewDemo;
+			productName = NestTableViewDemo;
+			productReference = 7059376B21CC8C6A00305B5A /* NestTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7059378221CC8C6B00305B5A /* NestTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7059379A21CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemoTests" */;
+			buildPhases = (
+				7059377F21CC8C6B00305B5A /* Sources */,
+				7059378021CC8C6B00305B5A /* Frameworks */,
+				7059378121CC8C6B00305B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7059378521CC8C6B00305B5A /* PBXTargetDependency */,
+			);
+			name = NestTableViewDemoTests;
+			productName = NestTableViewDemoTests;
+			productReference = 7059378321CC8C6B00305B5A /* NestTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7059378D21CC8C6B00305B5A /* NestTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7059379D21CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemoUITests" */;
+			buildPhases = (
+				7059378A21CC8C6B00305B5A /* Sources */,
+				7059378B21CC8C6B00305B5A /* Frameworks */,
+				7059378C21CC8C6B00305B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7059379021CC8C6B00305B5A /* PBXTargetDependency */,
+			);
+			name = NestTableViewDemoUITests;
+			productName = NestTableViewDemoUITests;
+			productReference = 7059378E21CC8C6B00305B5A /* NestTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7059376321CC8C6A00305B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = brucewang;
+				TargetAttributes = {
+					7059376A21CC8C6A00305B5A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7059378221CC8C6B00305B5A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7059376A21CC8C6A00305B5A;
+					};
+					7059378D21CC8C6B00305B5A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7059376A21CC8C6A00305B5A;
+					};
+				};
+			};
+			buildConfigurationList = 7059376621CC8C6A00305B5A /* Build configuration list for PBXProject "NestTableViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7059376221CC8C6A00305B5A;
+			productRefGroup = 7059376C21CC8C6A00305B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7059376A21CC8C6A00305B5A /* NestTableViewDemo */,
+				7059378221CC8C6B00305B5A /* NestTableViewDemoTests */,
+				7059378D21CC8C6B00305B5A /* NestTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7059376921CC8C6A00305B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703D4FF521D0787F007A9058 /* ContactCell.xib in Resources */,
+				7059377B21CC8C6B00305B5A /* LaunchScreen.storyboard in Resources */,
+				7059377821CC8C6B00305B5A /* Assets.xcassets in Resources */,
+				7059377621CC8C6A00305B5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059378121CC8C6B00305B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059378C21CC8C6B00305B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7059376721CC8C6A00305B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703D4FF421D0787F007A9058 /* ContactCell.m in Sources */,
+				705937A321CCB8C100305B5A /* Contact.m in Sources */,
+				7059377321CC8C6A00305B5A /* ViewController.m in Sources */,
+				7059377E21CC8C6B00305B5A /* main.m in Sources */,
+				7059377021CC8C6A00305B5A /* AppDelegate.m in Sources */,
+				705937A621CCBB8000305B5A /* ContactGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059377F21CC8C6B00305B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7059378821CC8C6B00305B5A /* NestTableViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7059378A21CC8C6B00305B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7059379321CC8C6B00305B5A /* NestTableViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7059378521CC8C6B00305B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7059376A21CC8C6A00305B5A /* NestTableViewDemo */;
+			targetProxy = 7059378421CC8C6B00305B5A /* PBXContainerItemProxy */;
+		};
+		7059379021CC8C6B00305B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7059376A21CC8C6A00305B5A /* NestTableViewDemo */;
+			targetProxy = 7059378F21CC8C6B00305B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7059377421CC8C6A00305B5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7059377521CC8C6A00305B5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7059377921CC8C6B00305B5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7059377A21CC8C6B00305B5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7059379521CC8C6B00305B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7059379621CC8C6B00305B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7059379821CC8C6B00305B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333F9LS74S;
+				INFOPLIST_FILE = NestTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7059379921CC8C6B00305B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333F9LS74S;
+				INFOPLIST_FILE = NestTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7059379B21CC8C6B00305B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestTableViewDemo.app/NestTableViewDemo";
+			};
+			name = Debug;
+		};
+		7059379C21CC8C6B00305B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestTableViewDemo.app/NestTableViewDemo";
+			};
+			name = Release;
+		};
+		7059379E21CC8C6B00305B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NestTableViewDemo;
+			};
+			name = Debug;
+		};
+		7059379F21CC8C6B00305B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.yxwang.developer.NestTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NestTableViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7059376621CC8C6A00305B5A /* Build configuration list for PBXProject "NestTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7059379521CC8C6B00305B5A /* Debug */,
+				7059379621CC8C6B00305B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7059379721CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7059379821CC8C6B00305B5A /* Debug */,
+				7059379921CC8C6B00305B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7059379A21CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7059379B21CC8C6B00305B5A /* Debug */,
+				7059379C21CC8C6B00305B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7059379D21CC8C6B00305B5A /* Build configuration list for PBXNativeTarget "NestTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7059379E21CC8C6B00305B5A /* Debug */,
+				7059379F21CC8C6B00305B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7059376321CC8C6A00305B5A /* Project object */;
+}
