@@ -176,7 +176,7 @@ static NSString * cellIdientifier = @"cellID";
      */
     
     // 由于此方法调用十分频繁，cell 的标识声明为静态的变量有利于性能优化
-//    static NSString * cellIdientifier = @"cellID"; // 为了使用以下第二种方法，改成了全局变量
+    // static NSString * cellIdientifier = @"cellID"; // 为了使用以下第二种方法，改成了全局变量
     
     /*
      dequeueReusableCellWithIdentifier:              // 委托用来获取一个已经分配的单元格，而不是分配一个新的单元格
