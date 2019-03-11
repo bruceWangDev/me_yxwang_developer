@@ -9,11 +9,13 @@
 #import "ViewController.h"
 
 #define IMAGECOUNT 5
+#define TIMER 2.0
 
 @interface ViewController () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, strong) NSTimer * timer;
 
 @end
 
@@ -62,21 +64,40 @@
      */
     
     // 6.添加一个定时器
-    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    [self addTimer];
+    
+}
+
+// 添加定时器
+- (void)addTimer {
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:TIMER target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    //
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    
+}
+
+// 移除定时器
+- (void)removeTimer {
+    
+    // 停止定时器(一旦定时器停止了，就不能再使用) 它是一次性的
+    [self.timer invalidate];
+    self.timer = nil;
     
 }
 
 - (void)nextImage {
     
     // 1.增加 pageControl 的页码
+    int page = 0;
     if (self.pageControl.currentPage == IMAGECOUNT - 1) {
-        self.pageControl.currentPage = 0;
+        page = 0;
     } else {
-        self.pageControl.currentPage++;
+        page = (int)self.pageControl.currentPage + 1;
     }
     
     // 2.计算 scrollView 滚动的位置
-    CGFloat offsetX = self.pageControl.currentPage * self.scrollView.frame.size.width;
+    CGFloat offsetX = page * self.scrollView.frame.size.width;
     CGPoint offset = CGPointMake(offsetX, 0);
     [self.scrollView setContentOffset:offset animated:YES];
 }
@@ -92,9 +113,20 @@
     NSLog(@"page is %d",page);
     self.pageControl.currentPage = page;
     
-  
 }
 
+// 开始拖拽的时候调用
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    
+    [self removeTimer];
+    
+}
 
+// 停止拖拽的时候调用
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    
+    [self addTimer];
+    
+}
 
 @end
