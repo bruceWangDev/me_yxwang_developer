@@ -68,7 +68,9 @@
     UIAlertAction * action = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         NSLog(@"%@",alertVC.textFields.firstObject.text);
         hero.name = alertVC.textFields.firstObject.text;
-        [self.tableV reloadData];
+//        [self.tableV reloadData]; // 全部刷新
+        NSIndexPath * index = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section];
+        [self.tableV reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationAutomatic];
     }];
     [alertVC addAction:action];
     UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
