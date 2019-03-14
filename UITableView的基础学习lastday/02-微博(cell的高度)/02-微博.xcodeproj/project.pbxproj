@@ -18,6 +18,7 @@
 		70457FED2239047E00E08E51 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70457FEC2239047E00E08E51 /* statuses.plist */; };
 		70457FF2223907F800E08E51 /* Statues.m in Sources */ = {isa = PBXBuildFile; fileRef = 70457FF1223907F800E08E51 /* Statues.m */; };
 		70B2FB412239EAED0010BB17 /* StatuesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B2FB402239EAED0010BB17 /* StatuesCell.m */; };
+		70B2FB44223A39610010BB17 /* StatuesFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B2FB43223A39610010BB17 /* StatuesFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		70457FF1223907F800E08E51 /* Statues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Statues.m; sourceTree = "<group>"; };
 		70B2FB3F2239EAED0010BB17 /* StatuesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatuesCell.h; sourceTree = "<group>"; };
 		70B2FB402239EAED0010BB17 /* StatuesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatuesCell.m; sourceTree = "<group>"; };
+		70B2FB42223A39610010BB17 /* StatuesFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatuesFrame.h; sourceTree = "<group>"; };
+		70B2FB43223A39610010BB17 /* StatuesFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatuesFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 			children = (
 				70457FF0223907F800E08E51 /* Statues.h */,
 				70457FF1223907F800E08E51 /* Statues.m */,
+				70B2FB42223A39610010BB17 /* StatuesFrame.h */,
+				70B2FB43223A39610010BB17 /* StatuesFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B2FB412239EAED0010BB17 /* StatuesCell.m in Sources */,
+				70B2FB44223A39610010BB17 /* StatuesFrame.m in Sources */,
 				70457FBE223902F500E08E51 /* ViewController.m in Sources */,
 				70457FF2223907F800E08E51 /* Statues.m in Sources */,
 				70457FC9223902F600E08E51 /* main.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Statues.h"
+#import "StatuesCell.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tableView.rowHeight = 300;
 }
 
 #pragma mark - 数据源方法
@@ -51,13 +53,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString * ID = @"ID";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    static NSString * ID = @"statuesID";
+    StatuesCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[StatuesCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
-    Statues * s = self.statues[indexPath.row];
-    cell.textLabel.text = s.name;
+    Statues * statues = self.statues[indexPath.row];
+    cell.statues = statues;
     return cell;
 }
 
