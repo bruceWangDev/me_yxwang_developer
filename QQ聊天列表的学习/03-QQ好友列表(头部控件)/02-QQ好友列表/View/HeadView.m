@@ -134,6 +134,15 @@
     // 2.设置好友数
     self.countL.text = [NSString stringWithFormat:@"%d/%ld", fg.online, fg.friends.count];
     
+    // 3.覆盖状态
+//    if (fg.isOpend) {
+//        self.nameBtn.imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
+//    } else {
+//        self.nameBtn.imageView.transform = CGAffineTransformMakeRotation(0);
+//    }
+
+    [self didMoveToSuperview];
+    
 }
 
 @end

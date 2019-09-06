@@ -87,10 +87,23 @@
  */
 - (IBAction)randomFoodClick:(UIButton *)sender {
     
-    [self.pickerV selectRow:arc4random()%12 inComponent:0 animated:YES];
-    [self.pickerV selectRow:arc4random()%15 inComponent:1 animated:YES];
-    [self.pickerV selectRow:arc4random()%10 inComponent:2 animated:YES];
+//    [self.pickerV selectRow:arc4random()%[self.foods[0] count] inComponent:0 animated:YES];
+//    [self.pickerV selectRow:arc4random()%[self.foods[1] count] inComponent:1 animated:YES];
+//    [self.pickerV selectRow:arc4random()%[self.foods[2] count] inComponent:2 animated:YES];
 
+    for (int i = 0 ; i < self.foods.count; i++) {
+        int count  = (int)[self.foods[i] count];
+        int oldRow = (int)[self.pickerV selectedRowInComponent:i];
+        int row    = oldRow;
+        
+        // 保证行数和上次不一样
+        while (row == oldRow) {
+            row = arc4random()%count;
+        }
+        
+        [self.pickerV selectRow:row inComponent:i animated:YES];
+        [self pickerView:nil didSelectRow:row inComponent:i];
+    }
 }
 
 @end
